@@ -167,7 +167,9 @@ const Login = () => {
                 if (response?.data?.statusCode == 200) {
                     const data = response.data.data;
                     const accessToken = response.data.data.access_token;
+                    const name = response.data.data.fullName;
                     localStorage.setItem("token", accessToken);
+                    localStorage.setItem("name", name);
 
                     console.log(data);
                     console.log(accessToken);

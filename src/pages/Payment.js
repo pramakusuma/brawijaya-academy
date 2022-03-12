@@ -76,16 +76,21 @@ const Payment = () => {
 
     const handlePay = async (e) => {
         try {
-            const resProfile = await axios.get("/profile");
-            const id = resProfile.data.role.id;
+            const id = localStorage.getItem("idCourse");
             console.log(id);
 
             const resQr = await axios.get("/courses/" + id + "/buy");
             const qr = resQr.data.data.qrCode;
             localStorage.setItem("qrCode", qr);
-            console.log(qr);
-        } catch (err) {}
+            // console.log(qr);
+        } catch (err) {
+            console.log(err);
+        }
     };
+
+    const name = localStorage.getItem("name");
+    const nameCourse = localStorage.getItem("nameCourse").toUpperCase();
+    const price = localStorage.getItem("priceCourse");
     return (
         <Bg>
             <NavbarMain />
@@ -121,13 +126,11 @@ const Payment = () => {
                     <PaymentTitle>JUMLAH</PaymentTitle>
                     <PaymentTotal>
                         <PaymentWrapper>
-                            <PaymentText>PEMROGRAMAN DASAR JAVA</PaymentText>
+                            <PaymentText>{nameCourse}</PaymentText>
                             <PaymentWrapper>
                                 <PaymentContainer>
                                     {/* <img src={user} alt="user" width="5%" /> */}
-                                    <PaymentTextThin>
-                                        Indira Setia Kamila
-                                    </PaymentTextThin>
+                                    <PaymentTextThin>{name}</PaymentTextThin>
                                 </PaymentContainer>
                                 <PaymentContainer>
                                     {/* <img src={user} alt="user" width="5%" /> */}
@@ -141,7 +144,7 @@ const Payment = () => {
                                     <PaymentTextThin>
                                         Total Tagihan
                                     </PaymentTextThin>
-                                    <PaymentTextThin>120.000</PaymentTextThin>
+                                    <PaymentTextThin>{price}</PaymentTextThin>
                                 </PaymentContainer>
                             </PaymentWrapper>
                             <ButtonWrapper>

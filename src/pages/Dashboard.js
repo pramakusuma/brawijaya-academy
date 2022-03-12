@@ -3,6 +3,7 @@ import { Bg } from "../components/BgMain";
 import Footer from "../components/Footer";
 import NavbarMain from "../components/NavbarMain";
 import { Card, Isi, Button, TextParagraph } from "../components/Card";
+import CardJoin from "../components/Card";
 import { TitleWhite } from "../components/Content";
 import Search from "../components/Search";
 import contentPemdas from "../assets/content-pemdas.svg";
@@ -20,13 +21,6 @@ const Wrapper = styled.div`
 `;
 
 const Dashboard = () => {
-    try {
-        axios.get("/profile").then((res) => console.log(res));
-        axios.get("/courses").then((res) => console.log(res.data.data.course));
-    } catch (err) {
-        console.log(err);
-    }
-
     return (
         <Bg>
             <NavbarMain />
@@ -35,7 +29,7 @@ const Dashboard = () => {
                 <Search />
             </Wrapper>
             <Wrapper>
-                <Card>
+                {/* <Card>
                     <Isi>
                         <img src={contentPemdas} alt="isi" width="70%" />
                         <TextParagraph>Pemrograman Dasar Java</TextParagraph>
@@ -57,7 +51,8 @@ const Dashboard = () => {
                         <TextParagraph>Pemrograman Web</TextParagraph>
                         <Button>Join Class</Button>
                     </Isi>
-                </Card>
+                </Card> */}
+                <CardJoin />
             </Wrapper>
 
             <Footer />

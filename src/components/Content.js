@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
     width: 90%;
     height: 90%;
@@ -12,7 +11,7 @@ export const Container = styled.div`
     justify-content: center;
     padding: 2rem;
     margin: 2rem;
-`
+`;
 
 export const TitleWrapper = styled.div`
     width: 100%;
@@ -20,7 +19,7 @@ export const TitleWrapper = styled.div`
     align-items: center;
     /* flex-direction: row; */
     justify-content: space-between;
-`
+`;
 
 export const ContentWrapper = styled.div`
     width: 100%;
@@ -29,14 +28,14 @@ export const ContentWrapper = styled.div`
     /* flex-direction: row; */
     /* margin-left: 4rem; */
     justify-content: space-around;
-`
+`;
 
 export const Title = styled.h1`
     color: #000;
     font-size: 4rem;
     font-weight: 800;
     margin: 4rem;
-`
+`;
 
 export const TitleWhite = styled.h1`
     width: 100%;
@@ -48,7 +47,7 @@ export const TitleWhite = styled.h1`
     margin-top: 0rem;
     font-size: 4rem;
     line-height: 6rem;
-`
+`;
 
 export const TextParagraph = styled.text`
     width: 80rem;
@@ -57,18 +56,18 @@ export const TextParagraph = styled.text`
     /* margin-left: 4rem; */
     margin-bottom: 4rem;
     text-align: justify;
-`
+`;
 
 export const Text = styled.text`
     width: 100%;
     color: #000;
     font-size: 1.8rem;
-    margin-top: 2rem ;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     /* margin-left: 2rem; */
     font-weight: 600;
     text-align: justify;
-`
+`;
 
 export const TextThin = styled.text`
     width: 40rem;
@@ -79,7 +78,7 @@ export const TextThin = styled.text`
     font-weight: 100;
     text-align: justify;
     /* align-items: center; */
-`
+`;
 
 export const PaymentContainer = styled.div`
     display: flex;
@@ -87,7 +86,7 @@ export const PaymentContainer = styled.div`
     /* align-items: center; */
     justify-content: space-between;
     /* margin: 2rem; */
-`
+`;
 
 export const PaymentWrapper = styled.div`
     display: flex;
@@ -97,7 +96,7 @@ export const PaymentWrapper = styled.div`
     justify-content: left;
     /* margin-top: 2rem; */
     /* margin-left: 2rem; */
-`
+`;
 
 export const PaymentTitle = styled.h1`
     width: 100%;
@@ -106,7 +105,7 @@ export const PaymentTitle = styled.h1`
     font-weight: 10rem;
     margin-left: 2rem;
     margin-top: 2rem;
-`
+`;
 
 export const PaymentText = styled.text`
     width: 100%;
@@ -116,16 +115,16 @@ export const PaymentText = styled.text`
     margin-left: 2rem;
     font-weight: 600;
     text-align: justify;
-`
+`;
 export const PaymentTextInactive = styled.text`
     width: 82rem;
-    color: #99A6AF;
+    color: #99a6af;
     font-size: 1.8rem;
     /* margin-top: 1.5rem; */
     margin-left: 2rem;
     font-weight: 600;
     text-align: justify;
-`
+`;
 
 export const PaymentTextThin = styled.text`
     width: 40rem;
@@ -136,7 +135,7 @@ export const PaymentTextThin = styled.text`
     font-weight: 100;
     text-align: justify;
     /* align-items: center; */
-`
+`;
 
 export const PaymentList = styled.div`
     width: 50rem;
@@ -153,7 +152,7 @@ export const PaymentList = styled.div`
     padding-right: 2rem;
     /* margin-right: 4rem; */
     /* margin-top: 2rem; */
-`
+`;
 
 export const PaymentLoad = styled.div`
     width: 90%;
@@ -170,7 +169,7 @@ export const PaymentLoad = styled.div`
     margin-left: 4rem;
     /* margin-right: 4rem; */
     margin-top: 2rem;
-`
+`;
 
 export const PaymentTotal = styled.div`
     width: 70rem;
@@ -185,7 +184,7 @@ export const PaymentTotal = styled.div`
     border-radius: 2rem;
     margin-right: 4rem;
     margin-top: 2rem;
-`
+`;
 
 export const PaymentBarcode = styled.div`
     width: 60rem;
@@ -201,7 +200,7 @@ export const PaymentBarcode = styled.div`
     border-radius: 2rem;
     margin-right: 4rem;
     margin-top: 2rem;
-`
+`;
 export const PaymentBarcodeText = styled.text`
     width: 50rem;
     color: #fff;
@@ -210,7 +209,7 @@ export const PaymentBarcodeText = styled.text`
     /* margin-left: 1rem; */
     font-weight: 100;
     text-align: justify;
-`
+`;
 
 export const PaymentStatus = styled.div`
     width: 90%;
@@ -227,24 +226,24 @@ export const PaymentStatus = styled.div`
     border-radius: 2rem;
     /* margin-right: 4rem; */
     margin-top: 2rem;
-`
+`;
 
 export const PaymentTextSuccess = styled.text`
     width: 100%;
-    color: #5CFA12;
+    color: #5cfa12;
     font-size: 1.8rem;
     /* margin-top: 1.5rem; */
     margin-right: 4rem;
     font-weight: 600;
     text-align: end;
-`
+`;
 
 export const PaymentTextFailed = styled.text`
     width: 100%;
-    color: #FF1A0C;
+    color: #ff1a0c;
     font-size: 1.8rem;
     /* margin-top: 1.5rem; */
     margin-right: 4rem;
     font-weight: 600;
     text-align: end;
-`
+`;
