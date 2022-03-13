@@ -14,7 +14,7 @@ import { LinkButton } from "../components/LinkButton";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-    width: 1005;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

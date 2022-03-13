@@ -17,7 +17,16 @@ import axios from "../api/axios";
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
+
+    /* @media only screen and (min-device-width: 640px) {
+        flex-direction: row;
+    }
+
+    @media only screen and (min-device-width: 390px) {
+        flex-direction: column;
+    } */
 `;
 
 const Dashboard = () => {

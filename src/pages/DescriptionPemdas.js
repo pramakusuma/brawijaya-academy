@@ -80,7 +80,7 @@ const DescriptionPemdas = () => {
             <Wrapper>
                 <Container>
                     <TitleWrapper>
-                        <Title>PEMROGRAMAN DASAR JAVA</Title>
+                        <Title>PEMROGRAMAN DASAR</Title>
                     </TitleWrapper>
                     <ContentWrapper>
                         <TextParagraph>

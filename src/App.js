@@ -20,18 +20,6 @@ import { AuthContext, AuthProvider } from "./config/Auth";
 import "./App.css";
 
 function App() {
-    //     const isAnyToken = JSON.parse(localStorage.getItem("token"));
-    //     const userId = JSON.parse(localStorage.getItem("id"));
-    //     const [authToken, setAuthToken] = useState(isAnyToken);
-    //     const [user, setUser] = useState(userId);
-
-    //     const setAndGetTokens = (token, id) => {
-    //         localStorage.setItem("token", token);
-    //         localStorage.setItem("id", id);
-    //         setAuthToken(token);
-    //         setUser(user);
-    //     };
-
     return (
         <AuthProvider>
             <GlobalSytles />

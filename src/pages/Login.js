@@ -73,6 +73,7 @@ const TextInput = styled(InputBase)`
     background-color: rgba(255, 255, 255, 0.3);
     outline-color: rgba(255, 255, 255, 0.3);
     border-radius: 1.5rem;
+    color: #fff;
     width: 40rem;
     height: 5.5rem;
     padding: 2rem;

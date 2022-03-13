@@ -4,6 +4,7 @@ import contentPemdas from "../assets/content-pemdas.svg";
 import contentPemlan from "../assets/content-pemlan.svg";
 import contentPemweb from "../assets/content-pemweb.svg";
 import { LinkButton } from "./LinkButton";
+import { useImage } from "react-image";
 import axios from "../api/axios";
 
 export const Card = styled.div`
@@ -11,9 +12,20 @@ export const Card = styled.div`
     box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 20px;
     width: 25rem;
-    height: 30rem;
+    height: auto;
     box-sizing: border-box;
     margin: 4rem;
+
+    /* @media only screen and (min-width: 640px) {
+        height: 30rem;
+    }
+
+    @media only screen and (min-width: 390px) {
+        width: 25rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+    } */
 `;
 
 export const Isi = styled.div`
@@ -57,12 +69,7 @@ export const Button = styled.button`
 
 const CardJoin = () => {
     const [courses, setCourses] = useState([]);
-    const gambar = [contentPemdas, contentPemdas, contentPemlan, contentPemweb];
-    const [index, setIndex] = useState(0);
-
-    function renderGambar() {
-        return gambar[index];
-    }
+    const gambar = [contentPemdas, contentPemlan, contentPemweb];
 
     useEffect(() => {
         async function fetchData() {
@@ -79,12 +86,15 @@ const CardJoin = () => {
 
     return (
         <>
-            {courses.map(({ id, name, price }) => {
+            {courses.map(({ id, imageLink, name, price }) => {
+                const image = { imageLink };
+                const imageURL = JSON.stringify(image.imageLink);
+                console.log(imageURL);
                 console.log(id);
                 return (
                     <Card>
                         <Isi>
-                            <img src={renderGambar()} alt={name} width="70%" />
+                            <img src={gambar[0]} alt={name} width="70%" />
                             <TextParagraph key={id}>{name}</TextParagraph>
                             <LinkButton to="/description">
                                 <Button

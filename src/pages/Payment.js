@@ -76,7 +76,7 @@ const Payment = () => {
 
     const handlePay = async (e) => {
         try {
-            const id = localStorage.getItem("idCourse");
+            const id = Number(localStorage.getItem("idCourse"));
             console.log(id);
 
             const resQr = await axios.get("/courses/" + id + "/buy");
