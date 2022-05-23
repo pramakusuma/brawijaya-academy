@@ -93,7 +93,7 @@ const PaymentStatus = () => {
                         </PaymentTextInactive>
                     </Container>
                     <ButtonWrapper>
-                        <LinkButton to="/dashboard">
+                        <LinkButton to="/class">
                             <ButtonDashboard>
                                 KEMBALI KE DASHBOARD
                             </ButtonDashboard>
